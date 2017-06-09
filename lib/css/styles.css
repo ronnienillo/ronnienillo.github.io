@@ -6,8 +6,6 @@
 		.glitch{
 			font-size: 100px;
 			position: relative;
-			text-align: center;
-			color: #ffffff;
 		}
 		.glitch:before, .glitch:after{
 			content: "RONNIE NILLO";

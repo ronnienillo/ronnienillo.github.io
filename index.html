@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ronnie Nillo</title>
-	<meta name="description" content="Frontend Web Developer">
-	<meta name="author" content="Ronnie Nillo">
-	<meta name="theme-color" content="#ebebeb">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ronnie Nillo</title>
+    <meta name="description" content="Frontend Web Developer">
+    <meta name="author" content="Ronnie Nillo">
+    <meta name="theme-color" content="#ebebeb">
 
     <!-- Bootstrap -->
     <link rel="icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Gloria+Hallelujah" rel="stylesheet">
     <link href="https://use.fontawesome.com/e4972dadc8.css" media="all" rel="stylesheet">
-    <link href="lib/css/styles.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,191 +24,85 @@
     <![endif]-->
   </head>
   <body>
-    <section class="container-fluid hero" id="home">
-    	<div class="row">
-    		<div class="col-sm-5 no-gutter">
-			<div class="hero-caption">
-				<div class="hero-caption__text">
-					<h1 class="text-uppercase">Ronnie Nillo</h1>
-					<h2 class="h4 text-uppercase">Front End Web Developer</h2>
-					<ul class="nav">
-						<li class="nav__list"><a href="#home" data-toggle="tooltip" title="Home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-						<li class="nav__list"><a href="#about" data-toggle="tooltip" title="About"><i class="fa fa-user-secret" aria-hidden="true"></i></a></li>
-						<li class="nav__list"><a href="#works" data-toggle="tooltip" title="My works"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-						<li class="nav__list"><a href="#contact"  data-toggle="tooltip" title="Contact"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-    			</div>
-    		</div>
-    		<div class="col-sm-7 no-gutter">
-    			<div class="hero-img" style="background-image: url('lib/img/img-hero.webp');">
-    			</div>
-    		</div>
+    <div id="vue-app">
+        <section class="container-fluid hero" id="home">
+            <div class="row">
+                <div class="col-sm-5 no-gutter">
+                <div class="hero-caption">
+                    <div class="hero-caption__text">
+                        <h1 class="text-uppercase">{{name}}</h1>
+                        <h2 class="h4 text-uppercase">{{position}}</h2>
+                        <ul class="nav">
+                            <li class="nav__list" v-for="navMenu in navMenus"><a :href="navMenu.linkTo" data-toggle="tooltip" v-bind:title="navMenu.title"><i :class="navMenu.font" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 no-gutter">
+                    <div class="hero-img" :style="{ 'background-image': 'url(' + hero + ')' }">
+                    </div>
+                </div>
 
-    	</div>
-    </section>
+            </div>
+        </section>
 
-    <section class="about align-center" id="about">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-8 col-md-offset-2">
-    				<h2 class="">Hi There!</h2>
-    				<p>I'm a front-end web developer with 3 years of experience. I build responsive, high-performance websites, interactives and web-apps. </p>
+        <section class="about align-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="">{{greeting}}</h2>
+                        <p v-for="introduce in introduces">{{introduce}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<p>My core toolset includes HTML, Sass, Less, Jquery, Grunt, Gulp, Git, SVN, WordPress and Photoshop.</p>
+        <section class="portfolio" id="works">
+            <div class="container-fluid">
+                <div class="container">
+                    <h2 class="align-right">{{workTile}}</h2>
+                </div>
+                <div class="row grid">
+                    <div v-for="card in cards" class="col-xs-6 col-md-4 grid-item no-gutter">
+                        <a :href="card.websiteurl" target="_blank"> 
+                            <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
+                                <div class="card__caption">
+                                    <div class="card__caption_text">
+                                        <h2>{{card.title}}</h2>
+                                        <h4>{{card.subtitles}}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+        <footer class="align-center" id="contact">
+            <div class="container">
+                <h2>{{footerTitle}}</h2>
 
-					<p>I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimised, responsive, cross-browser compatible and accessible for users and search engines.</p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="portfolio" id="works">
-    	<div class="container">
-    		<h2 class="align-right">My Works</h2>
-    		<div class="row grid">
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="https://www.moulistockholm.com/">
-	    				<div class="card" style="background-image: url('lib/img/mouli.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Mouli</h2>
-	    							<h4>E-commers | fashion | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="http://www.lano.no/">
-	    				<div class="card" style="background-image: url('lib/img/lano.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Lano</h2>
-	    							<h4>Information | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-12 col-md-4 grid-item no-gutter">
-    				<a href="http://www.lilyandjack.se/">
-	    				<div class="card" style="background-image: url('lib/img/lily-and-jack.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Lily & Jack</h2>
-	    							<h4>fashion | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="https://www.mountainworks.se/">
-	    				<div class="card" style="background-image: url('lib/img/mountainworks.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Mountain works</h2>
-	    							<h4>E-commers | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="https://www.bilon.se/">
-	    				<div class="card" style="background-image: url('lib/img/bilon.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Bilon</h2>
-	    							<h4>Rent a car</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-12 col-md-4 grid-item no-gutter">
-    				<a href="https://www.lararjouren.se/">
-	    				<div class="card" style="background-image: url('lib/img/lararjouren.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Lararjouren</h2>
-	    							<h4>Educational | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="http://www.valedopartners.com/">
-	    				<div class="card" style="background-image: url('lib/img/valedo.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Valedo</h2>
-	    							<h4>Travels | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-6 col-md-4 grid-item no-gutter">
-    				<a href="https://www.financebuddy.se/">
-	    				<div class="card" style="background-image: url('lib/img/financebuddy.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Finance Buddy</h2>
-	    							<h4>Finance</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    			<div class="col-xs-12 col-md-4 grid-item no-gutter">
-    				<a href="https://www.drylake.com/">
-	    				<div class="card" style="background-image: url('lib/img/drylake.webp');">
-	    					<div class="card__caption">
-	    						<div class="card__caption_text">
-	    							<h2>Drylake</h2>
-	    							<h4>E-commers | fashion | Blog</h4>
-	    						</div>
-	    					</div>
-	    				</div>
-    				</a>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <footer class="align-center" id="contact">
-    	<div class="container">
-    		<h2>Hit me here</h2>
-
-			<ul class="ul-social">
-				<li>
-					<a href="ronnienillo.pdf" download=""  data-toggle="tooltip" title="Download CV">
-						<i class="fa fa-paperclip fa-lg" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:nilloronniecolayo@gmail.com"  data-toggle="tooltip" title="E-mail">
-						<i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/ronnienillo/ronnienillo.github.io"  data-toggle="tooltip" title="Github channel">
-						<i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
-					</a>
-				</li>
-			</ul>
-    		<p>Ronnie Nillo Copy Right 2017</p>
-    	</div>
-    </footer>		
+                <ul class="ul-social">
+                    <li v-for="footerMenu in footerMenus">
+                        <a :href="footerMenu.footerUrl" download=""  data-toggle="tooltip" v-bind:title="footerMenu.title">
+                            <i :class="footerMenu.fontMenu" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>{{copyRight}}</p>
+            </div>
+        </footer>  
+    </div>
+     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="lib/js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();    

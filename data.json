@@ -1,37 +1,34 @@
-{
-	"data": [
-		{
-			"name": "ronnie nillo",
-	        "position": "Front End Web Developer / Wordpres",
-	        "navMenus": [
-	            {"linkTo": "#home", "title": "Home", "font": "fa fa-home"},
-	            {"linkTo": "#about", "title": "About", "font": "fa fa-user-secret"},
-	            {"linkTo": "#works", "title": "Portfolio", "font": "fa fa-th"},
-	            {"linkTo": "#contact", "title": "Contact", "font": "fa fa-phone"}
-	        ],
-	        "hero": "images/img-hero.webp",
-	        "greeting": "Hi There!",
-	        "introduces": [ "I'm a front-end web developer with 3 years of experience. I build responsive, high-performance websites, interactives and web-apps.", "My core toolset includes HTML, Sass, Less, Jquery, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
-	        "workTile": "My Works",
-	        "cards": [
-	            {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.webp", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},
-	            {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.webp", "title": "Lano", "subtitles": "Information | Blog"},
-	            {"websiteurl":"http://www.lilyandjack.se/", "cardImg": "images/lily-and-jack.webp", "title": "Lily & Jack", "subtitles": "fashion | Blog"},
-	            {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.webp", "title": "Mountain works", "subtitles": "E-commers | Blog"},
-	            {"websiteurl":"https://www.bilon.se/", "cardImg": "images/bilon.webp", "title": "Bilon", "subtitles": "Rent a car"},
-	            {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.webp", "title": "lararjouren", "subtitles": "Educationals | blog"},
-	            {"websiteurl":"http://www.valedopartners.com/", "cardImg": "images/valedo.webp", "title": "Valedo", "subtitles": "Travels | blog"},
-	            {"websiteurl":"https://www.financebuddy.se/", "cardImg": "images/financebuddy.webp", "title": "Finance buddy", "subtitles": "Finance"},
-	            {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.webp", "title": "drylake", "subtitles": "E-commers | fashion | Blog"}
-	        ],
-	        "footerTitle": "Hit me here",
-	        "footerMenus": [
-	            {"footerUrl": "ronnienillo.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
-	            {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
-	            {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
-	        ],
-	        "copyRight": "Ronnie Nillo Copy Right 2017"
 
-		}
-	]	
+{
+	"name": "ronnie nillo",
+    "position": "Front End Web Developer / Wordpres",
+    "navMenus": [
+        {"linkTo": "#home", "title": "Home", "font": "fa fa-home"},
+        {"linkTo": "#about", "title": "About", "font": "fa fa-user-secret"},
+        {"linkTo": "#works", "title": "Portfolio", "font": "fa fa-th"},
+        {"linkTo": "#contact", "title": "Contact", "font": "fa fa-phone"}
+    ],
+    "hero": "images/img-hero.webp",
+    "greeting": "Hi There!",
+    "introduces": [ "I'm a front-end web developer with 3 years of experience. I build responsive, high-performance websites, interactives and web-apps.", "My core toolset includes HTML, Sass, Less, Jquery, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
+    "workTile": "My Works",
+    "cards": [
+        {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.webp", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},
+        {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.webp", "title": "Lano", "subtitles": "Information | Blog"},
+        {"websiteurl":"http://www.lilyandjack.se/", "cardImg": "images/lily-and-jack.webp", "title": "Lily & Jack", "subtitles": "fashion | Blog"},
+        {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.webp", "title": "Mountain works", "subtitles": "E-commers | Blog"},
+        {"websiteurl":"https://www.bilon.se/", "cardImg": "images/bilon.webp", "title": "Bilon", "subtitles": "Rent a car"},
+        {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.webp", "title": "lararjouren", "subtitles": "Educationals | blog"},
+        {"websiteurl":"http://www.valedopartners.com/", "cardImg": "images/valedo.webp", "title": "Valedo", "subtitles": "Travels | blog"},
+        {"websiteurl":"https://www.financebuddy.se/", "cardImg": "images/financebuddy.webp", "title": "Finance buddy", "subtitles": "Finance"},
+        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.webp", "title": "drylake", "subtitles": "E-commers | fashion | Blog"}
+    ],
+    "footerTitle": "Hit me here",
+    "footerMenus": [
+        {"footerUrl": "ronnienillo.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
+        {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
+        {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
+    ],
+    "copyRight": "Ronnie Nillo Copy Right 2017"
+
 }

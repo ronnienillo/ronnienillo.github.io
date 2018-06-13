@@ -63,7 +63,7 @@
                     <h2 class="align-right">{{workTile}}</h2>
                 </div>
                 <div class="row grid">
-                    <div v-for="card in cards" class="col-xs-6 col-md-4 grid-item no-gutter">
+                    <div v-for="card in cards" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
                         <a :href="card.websiteurl" target="_blank"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
                                 <div class="card__caption">
@@ -85,7 +85,7 @@
 
                 <ul class="ul-social">
                     <li v-for="footerMenu in footerMenus">
-                        <a :href="footerMenu.footerUrl" download=""  data-toggle="tooltip" v-bind:title="footerMenu.title">
+                        <a :href="footerMenu.footerUrl" data-toggle="tooltip" v-bind:title="footerMenu.title">
                             <i :class="footerMenu.fontMenu" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -100,6 +100,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>

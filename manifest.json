@@ -3,13 +3,13 @@
   "name": "Ronnie Nillo",
   "icons": [
     {
-      "src": "images/img-hero.webp",
-      "type": "image/webp",
+      "src": "favicon.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/img-hero.webp",
-      "type": "image/webp",
+      "src": "favicon.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],

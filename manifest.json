@@ -1,0 +1,21 @@
+{
+  "short_name": "Ronnie",
+  "name": "Ronnie Nillo",
+  "icons": [
+    {
+      "src": "images/img-hero.webp",
+      "type": "image/webp",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/img-hero.webp",
+      "type": "image/webp",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/maps/?source=pwa",
+  "background_color": "#ebebeb",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#ebebeb"
+}

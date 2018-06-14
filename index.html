@@ -62,7 +62,21 @@
                 <div class="container">
                     <h2 class="align-right">{{workTile}}</h2>
                 </div>
-                <div class="row grid">
+                <div class="row grid" v-if="showLess">
+                    <div v-for="card in cards.slice(0, 6)" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
+                        <a :href="card.websiteurl" target="_blank"> 
+                            <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
+                                <div class="card__caption">
+                                    <div class="card__caption_text">
+                                        <h2>{{card.title}}</h2>
+                                        <h4>{{card.subtitles}}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row grid" v-else>
                     <div v-for="card in cards" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
                         <a :href="card.websiteurl" target="_blank"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
@@ -75,9 +89,9 @@
                             </div>
                         </a>
                     </div>
-                  
                 </div>
             </div>
+            <h3 @click="showLess = false" class="text-center show-more">Show more</h3>
         </section>
         <footer class="align-center" id="contact">
             <div class="container">

@@ -10,12 +10,19 @@
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "96x96"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "144x144"
     },
     {
       "src": "app-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ]
+  ],
+  "scope": "/maps/"
+  
 }

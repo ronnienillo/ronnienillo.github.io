@@ -1,6 +1,11 @@
 {
-  "short_name": "Ronnie",
+  "short_name": "Ronnie Nillo Portfolio",
   "name": "Ronnie Nillo",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ebebeb",
+  "theme_color": "#333333",
   "icons": [
     {
       "src": "favicon.png",
@@ -8,14 +13,9 @@
       "sizes": "192x192"
     },
     {
-      "src": "favicon.png",
+      "src": "app-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": "/maps/?source=pwa",
-  "background_color": "#ebebeb",
-  "display": "standalone",
-  "scope": "/maps/",
-  "theme_color": "#ebebeb"
+  ]
 }

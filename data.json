@@ -21,7 +21,10 @@
         {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.webp", "title": "lararjouren", "subtitles": "Educationals | blog"},
         {"websiteurl":"http://www.valedopartners.com/", "cardImg": "images/valedo.webp", "title": "Valedo", "subtitles": "Travels | blog"},
         {"websiteurl":"https://www.financebuddy.se/", "cardImg": "images/financebuddy.webp", "title": "Finance buddy", "subtitles": "Finance"},
-        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.webp", "title": "drylake", "subtitles": "E-commers | fashion | Blog"}
+        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.webp", "title": "drylake", "subtitles": "E-commers | fashion | Blog"},
+        {"websiteurl":"https://www.valerina.se/", "cardImg": "images/valerina.webp", "title": "Valerina", "subtitles": "E-commers | blog"},
+        {"websiteurl":"https://www.pikasol.dk/", "cardImg": "images/pikasolDk.webp", "title": "Pikasol DK", "subtitles": "E-commers | Blog"},
+        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/braomega.webp", "title": "Bra omega", "subtitles": "E-commers | Blog"}
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [
@@ -29,6 +32,6 @@
         {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
         {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
     ],
-    "copyRight": "Ronnie Nillo Copy Right 2017"
+    "copyRight": "Ronnie Nillo Copy Right 2018"
 
 }

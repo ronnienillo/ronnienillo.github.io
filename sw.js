@@ -13,7 +13,7 @@ self.addEventListener('install', function (event) {
           '/css/style.css',
           '/favicon.png',
           'https://fonts.googleapis.com/css?family=Dosis|Gloria+Hallelujah',
-          'https://use.fontawesome.com/e4972dadc8.css',
+          'https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css',
           'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js',
           'https://cdn.jsdelivr.net/npm/vue',
           'https://unpkg.com/axios/dist/axios.min.js',

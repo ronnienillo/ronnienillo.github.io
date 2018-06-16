@@ -5767,13 +5767,13 @@ button.close {
 /* action */
 /* Disable Text Select */
 @font-face {}html {
-  font-size: 50%; }
+  font-size: 55.5%; }
   @media (min-width: 768px) {
     html {
-      font-size: 55%; } }
+      font-size: 60.5%; } }
   @media (min-width: 992px) {
     html {
-      font-size: 62.5%; } }
+      font-size: 65.5%; } }
 
 body {
   font-family: 'Dosis', sans-serif;

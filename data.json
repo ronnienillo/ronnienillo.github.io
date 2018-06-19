@@ -10,7 +10,7 @@
     ],
     "hero": "images/img-hero.webp",
     "greeting": "Hi There!",
-    "introduces": [ "I'm a front-end web developer with 3 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
+    "introduces": [ "I'm a front-end web developer with 3 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Vue.js, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
         {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.webp", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},

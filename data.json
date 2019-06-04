@@ -8,23 +8,23 @@
         {"linkTo": "#works", "title": "Portfolio", "font": "fa fa-th"},
         {"linkTo": "#contact", "title": "Contact", "font": "fa fa-phone"}
     ],
-    "hero": "images/img-hero.jpg",
+    "hero": "images/img-hero.webp",
     "greeting": "Hi There!",
     "introduces": [ "I'm a front-end web developer with 4 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Vue.js, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
-        {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.jpg", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},
-        {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.jpg", "title": "Lano", "subtitles": "Information | Blog"},
-        {"websiteurl":"http://www.lilyandjack.se/", "cardImg": "images/lily-and-jack.jpg", "title": "Lily & Jack", "subtitles": "fashion | Blog"},
-        {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.jpg", "title": "Mountain works", "subtitles": "E-commers | Blog"},
+        {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.webp", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},
+        {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.webp", "title": "Lano", "subtitles": "Information | Blog"},
+        {"websiteurl":"http://www.lilyandjack.se/", "cardImg": "images/lily-and-jack.webp", "title": "Lily & Jack", "subtitles": "fashion | Blog"},
+        {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.webp", "title": "Mountain works", "subtitles": "E-commers | Blog"},
         {"websiteurl":"https://www.bilon.se/", "cardImg": "images/bilon.webp", "title": "Bilon", "subtitles": "Rent a car"},
-        {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.jpg", "title": "lararjouren", "subtitles": "Educationals | blog"},
-        {"websiteurl":"http://www.valedopartners.com/", "cardImg": "images/valedo.jpg", "title": "Valedo", "subtitles": "Travels | blog"},
-        {"websiteurl":"https://www.financebuddy.se/", "cardImg": "images/financebuddy.jpg", "title": "Finance buddy", "subtitles": "Finance"},
-        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.jpg", "title": "drylake", "subtitles": "E-commers | fashion | Blog"},
-        {"websiteurl":"https://www.valerina.se/", "cardImg": "images/valerina.jpg", "title": "Valerina", "subtitles": "E-commers | blog"},
-        {"websiteurl":"https://www.pikasol.dk/", "cardImg": "images/pikasolDk.jpg", "title": "Pikasol DK", "subtitles": "E-commers | Blog"},
-        {"websiteurl":"https://www.braomega3.se/", "cardImg": "images/braomega.jpg", "title": "Bra omega", "subtitles": "E-commers | Blog"}
+        {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.webp", "title": "lararjouren", "subtitles": "Educationals | blog"},
+        {"websiteurl":"http://www.valedopartners.com/", "cardImg": "images/valedo.webp", "title": "Valedo", "subtitles": "Travels | blog"},
+        {"websiteurl":"https://www.financebuddy.se/", "cardImg": "images/financebuddy.webp", "title": "Finance buddy", "subtitles": "Finance"},
+        {"websiteurl":"https://www.drylake.com/", "cardImg": "images/drylake.webp", "title": "drylake", "subtitles": "E-commers | fashion | Blog"},
+        {"websiteurl":"https://www.valerina.se/", "cardImg": "images/valerina.webp", "title": "Valerina", "subtitles": "E-commers | blog"},
+        {"websiteurl":"https://www.pikasol.dk/", "cardImg": "images/pikasolDk.webp", "title": "Pikasol DK", "subtitles": "E-commers | Blog"},
+        {"websiteurl":"https://www.braomega3.se/", "cardImg": "images/braomega.webp", "title": "Bra omega", "subtitles": "E-commers | Blog"}
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [
@@ -32,6 +32,6 @@
         {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
         {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
     ],
-    "copyRight": "Ronnie Nillo Copy Right 2018"
+    "copyRight": "Ronnie Nillo Copy Right 2019"
 
 }

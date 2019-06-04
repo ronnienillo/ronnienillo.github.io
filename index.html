@@ -27,12 +27,16 @@
   <body>
     <div id="vue-app">
         <section class="container-fluid hero" id="home">
+            <div class="mode-wrap">
+                <div class="talk"><div class="talk-btn">Press and say <span>"Dark mode"</span></div></div>
+                <h3 class="content"></h3>
+            </div>
             <div class="row">
                 <div class="col-sm-5 no-gutter">
                 <div class="hero-caption">
                     <div class="hero-caption__text">
-                        <h1 class="text-uppercase">{{name}}</h1>
-                        <h2 class="h4 text-uppercase">{{position}}</h2>
+                        <h1 class="text-uppercase" v-cloak>{{name}}</h1>
+                        <h2 class="h4 text-uppercase" v-cloak>{{position}}</h2>
                         <ul class="nav">
                             <li class="nav__list" v-for="navMenu in navMenus"><a :href="navMenu.linkTo" data-toggle="tooltip" v-bind:title="navMenu.title"><i :class="navMenu.font" aria-hidden="true"></i></a></li>
                         </ul>
@@ -41,6 +45,7 @@
                 </div>
                 <div class="col-sm-7 no-gutter">
                     <div class="hero-img" :style="{ 'background-image': 'url(' + hero + ')' }">
+                        <div class="before"></div>
                     </div>
                 </div>
 
@@ -51,8 +56,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2 class="">{{greeting}}</h2>
-                        <p v-for="introduce in introduces">{{introduce}}</p>
+                        <h2 class="" v-cloak>{{greeting}}</h2>
+                        <p v-for="introduce in introduces" v-cloak>{{introduce}}</p>
                     </div>
                 </div>
             </div>
@@ -61,16 +66,16 @@
         <section class="portfolio" id="works">
             <div class="container-fluid">
                 <div class="container">
-                    <h2 class="align-right">{{workTile}}</h2>
+                    <h2 class="align-right" v-cloak>{{workTile}}</h2>
                 </div>
-                <div class="row grid" v-if="showLess">
+                <div class="row grid" v-if="showMore">
                     <div v-for="card in cards.slice(0, 6)" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
                         <a :href="card.websiteurl" target="_blank" rel="noopener"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
                                 <div class="card__caption">
                                     <div class="card__caption_text">
-                                        <h2>{{card.title}}</h2>
-                                        <h4>{{card.subtitles}}</h4>
+                                        <h2 v-cloak>{{card.title}}</h2>
+                                        <h4 v-cloak>{{card.subtitles}}</h4>
                                     </div>
                                 </div>
                             </div>
@@ -79,12 +84,12 @@
                 </div>
                 <div class="row grid" v-else>
                     <div v-for="card in cards" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
-                        <a :href="card.websiteurl" target="_blank" rel="noopener"> 
+                        <a :href="card.websiteurl" target="_blank"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
                                 <div class="card__caption">
                                     <div class="card__caption_text">
-                                        <h2>{{card.title}}</h2>
-                                        <h4>{{card.subtitles}}</h4>
+                                        <h2 v-cloak>{{card.title}}</h2>
+                                        <h4 v-cloak>{{card.subtitles}}</h4>
                                     </div>
                                 </div>
                             </div>
@@ -92,11 +97,11 @@
                     </div>
                 </div>
             </div>
-            <h3 @click="showLess = false" class="text-center show-more">Show more</h3>
+            <h3 @click="showMore = false" class="text-center show-more">Show more</h3>
         </section>
         <footer class="align-center" id="contact">
             <div class="container">
-                <h2>{{footerTitle}}</h2>
+                <h2 v-cloak>{{footerTitle}}</h2>
 
                 <ul class="ul-social">
                     <li v-for="footerMenu in footerMenus">
@@ -105,26 +110,74 @@
                         </a>
                     </li>
                 </ul>
-                <p>{{copyRight}}</p>
+                <p v-cloak>{{copyRight}}</p>
             </div>
         </footer>  
     </div>
      
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery  JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();    
-      });
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+            // new Nav();
+            const btn = document.querySelector('.talk');
+            const content = document.querySelector('.content');
+            // default answer message
+            const darkmode = ['dark mode'];
+            const lightmode = ['light mode'];
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+            recognition.onstart = function() {
+                console.log('voice is activated, you can to microphoneee');
+            };
+            recognition.onresult = function(event){
+                const current = event.resultIndex;
+                const transcript = event.results[current][0].transcript;
+                content.textContent = transcript;
+                readOutLoud(transcript);
+            };
+            //add the listener to the btn
+            btn.addEventListener('click', () => {
+                recognition.start();
+            });
+            function readOutLoud(message) {
+                const speech = new SpeechSynthesisUtterance();
+                speech.text = 'i dont know what you said';
+                if ($("body").hasClass('dark-mode')) {
+                    if(message.includes('light')) {
+                        const finalText = lightmode[Math.floor(Math.random() * lightmode.length)];
+                        $("body").removeClass('dark-mode');
+                        $(".hero-img .before").removeClass('dark-mode');
+                        $(".talk-btn span").text(' "Dark mode" ');
+                        speech.text = finalText;
+                    }
+                }else{
+                    if(message.includes('dark')) {
+                        const finalText = darkmode[Math.floor(Math.random() * darkmode.length)];
+                        speech.text = finalText;
+                        $("body").addClass('dark-mode');
+                        $(".hero-img .before").addClass('dark-mode');
+                        $(".talk-btn span").text(' "Light mode" ');
+                    }
+                }
+                // speech.text = message;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.picth = 1;
+                window.speechSynthesis.speak(speech);
+            }
+        });
     </script>
   </body>
 </html>

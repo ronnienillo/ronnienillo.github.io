@@ -138,8 +138,9 @@
             var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
             if (is_safari){
-                console.log('Safari');
+                $('.mode-wrap').hide();
             }
+     
             // new Nav();
             const btn = document.querySelector('.talk');
             const content = document.querySelector('.content');

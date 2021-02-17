@@ -1,7 +1,7 @@
 
 {
 	"name": "ronnie nillo",
-    "position": "Front End Web Developer / Wordpres",
+    "position": "Front End Web Developer / Wordpress",
     "navMenus": [
         {"linkTo": "#home", "title": "Home", "font": "fa fa-home"},
         {"linkTo": "#about", "title": "About", "font": "fa fa-user-secret"},

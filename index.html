@@ -69,7 +69,7 @@
                     <h2 class="align-right" v-cloak>{{workTile}}</h2>
                 </div>
                 <div class="row grid" v-if="showMore">
-                    <div v-for="card in cards.slice(0, 6)" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
+                    <div v-for="card in cards.slice(0, 9)" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
                         <a :href="card.websiteurl" target="_blank" rel="noopener"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
                                 <div class="card__caption">

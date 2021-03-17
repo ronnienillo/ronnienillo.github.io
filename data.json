@@ -13,7 +13,11 @@
     "introduces": [ "I'm a front-end web developer with 5 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Vue.js, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
-        {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.jpg", "title": "Mouli", "subtitles": "E-commers | fashion| Blog"},
+        {"websiteurl":"https://www.hotbot.com/", "cardImg": "images/hotbot.png", "title": "Hotbot", "subtitles": "VPN | Blog"},
+        {"websiteurl":"https://www.kube.com/", "cardImg": "images/kube.png", "title": "Kube", "subtitles": "Job posting | Blog"},
+        {"websiteurl":"https://www.square-takeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"},
+        {"websiteurl":"https://www.omgpay.com/", "cardImg": "images/omgpay.png", "title": "Omg pay", "subtitles": "Job posting | Blog"},
+        {"websiteurl":"https://www.moulistockholm.com/", "cardImg": "images/mouli.jpg", "title": "Mouli", "subtitles": "E-commers | fashion | Blog"},
         {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.jpg", "title": "Lano", "subtitles": "Information | Blog"},
         {"websiteurl":"http://www.lilyandjack.se/", "cardImg": "images/lily-and-jack.jpg", "title": "Lily & Jack", "subtitles": "fashion | Blog"},
         {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.jpg", "title": "Mountain works", "subtitles": "E-commers | Blog"},

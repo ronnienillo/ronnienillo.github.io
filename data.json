@@ -28,7 +28,8 @@
         {"websiteurl":"https://www.hotbot.com/", "cardImg": "images/hotbot.png", "title": "Hotbot", "subtitles": "VPN | Blog"},
         {"websiteurl":"https://www.zido.io/", "cardImg": "images/zido.png", "title": "Zido", "subtitles": "Job posting | Blog"},
         {"websiteurl":"https://www.square-takeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"},
-        {"websiteurl":"https://www.omgpay.com/", "cardImg": "images/omg-pay.png", "title": "Omg pay", "subtitles": "Job posting | Blog"}
+        {"websiteurl":"https://www.omgpay.com/", "cardImg": "images/omg-pay.png", "title": "Omg pay", "subtitles": "Job posting | Blog"},
+        {"websiteurl":"https://www.kube.com/", "cardImg": "images/kube.jpg", "title": "Kube", "subtitles": "Job posting | Blog"}
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [

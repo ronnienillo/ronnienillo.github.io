@@ -10,7 +10,7 @@
     ],
     "hero": "images/img-hero.jpg",
     "greeting": "Hi There!",
-    "introduces": [ "I'm a front-end web developer with 5 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Vue.js, Grunt, Gulp, Git, SVN, WordPress and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
+    "introduces": [ "I'm a front-end web developer with 6 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Vue.js, next.js Grunt, Gulp, Git, SVN, WordPress, ACF, and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
         {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.jpg", "title": "Lano", "subtitles": "Information | Blog"},
@@ -27,7 +27,7 @@
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [
-        {"footerUrl": "Ronnie-Nillo__CV-2020.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
+        {"footerUrl": "ronnie-nillo-cv2021.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
         {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
         {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
     ],

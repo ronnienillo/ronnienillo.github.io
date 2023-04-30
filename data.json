@@ -13,7 +13,7 @@
     "introduces": [ "I'm a front-end web developer with more than 7 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Jquery, Grunt, Gulp, Git, SVN, WordPress, ACF, and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
-	{"websiteurl":"https://next13-movie-five.vercel.app/", "cardImg": "images/next13-movie-five.png", "title": "Movie five", "subtitles": "Entertainment"},
+	{"websiteurl":"https://next13-movie-five.vercel.app/", "cardImg": "images/next13-movie-five.png", "title": "Next Movies", "subtitles": "Entertainment"},
         {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.jpg", "title": "Lano", "subtitles": "Information | Blog"},
         {"websiteurl":"https://www.mountainworks.se/", "cardImg": "images/mountainworks.jpg", "title": "Mountain works", "subtitles": "E-commers | Blog"},
         {"websiteurl":"https://www.lararjouren.se/", "cardImg": "images/lararjouren.jpg", "title": "lararjouren", "subtitles": "Educationals | blog"},

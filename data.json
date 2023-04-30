@@ -28,7 +28,7 @@
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [
-        {"footerUrl": "ronnie-nillo-cv2021.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
+        {"footerUrl": "Ronnie-Nillo-CV.pdf", "title": "Download CV", "fontMenu": "fa fa-paperclip fa-lg"},
         {"footerUrl": "mailto:nilloronniecolayo@gmail.com", "title": "E-mail", "fontMenu": "fa fa-envelope-square fa-lg"},
         {"footerUrl": "https://github.com/ronnienillo/ronnienillo.github.io", "title": "Github channel", "fontMenu": "fa fa-github-square fa-lg"}
     ],

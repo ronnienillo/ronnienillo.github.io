@@ -24,11 +24,12 @@
         {"websiteurl":"https://www.valerina.se/", "cardImg": "images/valerina.jpg", "title": "Valerina", "subtitles": "E-commers | blog"},
         {"websiteurl":"https://www.pikasol.dk/", "cardImg": "images/pikasolDk.jpg", "title": "Pikasol DK", "subtitles": "E-commers | Blog"},
         {"websiteurl":"https://www.braomega3.se/", "cardImg": "images/braomega.jpg", "title": "Bra omega", "subtitles": "E-commers | Blog"},
-        {"websiteurl":"https://www.hotbotvpn.com/", "cardImg": "images/hotbot.png", "title": "Hotbot vpn", "subtitles": "VPN | Blog"},
-        {"websiteurl":"https://www.zido.io/", "cardImg": "images/zido.png", "title": "Zido", "subtitles": "Job posting | Agency | Blog"},
+        {"websiteurl":"https://www.hotbotvpn.com/", "cardImg": "images/hotbot.png", "title": "Hotbot vpn", "subtitles": "Virtual Private Network | Blog"},
+        {"websiteurl":"https://www.zido.io/", "cardImg": "images/zido.png", "title": "Zido", "subtitles": "Job posting | Digital Agency | Blog"},
         {"websiteurl":"https://startchatnow.com/", "cardImg": "images/startchatnow.jpg", "title": "Start chat now", "subtitles": "AI Software Tool | Articles"},
         {"websiteurl":"https://adblockfusion.com/", "cardImg": "images/adb.jpg", "title": "AdblockFusion", "subtitles": "Browser Security | Articles"},
-        {"websiteurl":"https://www.squaretakeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"}
+        {"websiteurl":"https://www.squaretakeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"},
+	{"websiteurl":"https://www.activateprivacy.com/", "cardImg": "images/activate-privacy.jpg", "title": "Activate Privacy", "subtitles": "Virtual Private Network | Blog"}
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [

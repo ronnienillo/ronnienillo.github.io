@@ -29,7 +29,8 @@
         {"websiteurl":"https://startchatnow.com/", "cardImg": "images/startchatnow.jpg", "title": "Start chat now", "subtitles": "AI Software Tool | Articles"},
         {"websiteurl":"https://adblockfusion.com/", "cardImg": "images/adb.jpg", "title": "AdblockFusion", "subtitles": "Browser Security | Articles"},
         {"websiteurl":"https://www.squaretakeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"},
-	{"websiteurl":"https://www.activateprivacy.com/", "cardImg": "images/activate-privacy.jpg", "title": "Activate Privacy", "subtitles": "Virtual Private Network | Blog"}
+	{"websiteurl":"https://www.activateprivacy.com/", "cardImg": "images/activate-privacy.jpg", "title": "Activate Privacy", "subtitles": "Virtual Private Network | Blog"},
+	{"websiteurl":"https://platformmedia.ca/", "cardImg": "images/platform.jpg", "title": "platformmedia", "subtitles": "Platform Media | Digital Agency"},
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [

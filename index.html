@@ -80,9 +80,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="container">
                     <h2 class="align-right" v-cloak>{{workTile}}</h2>
                 </div>
-                <div class="row grid">
-                    <div v-for="card in cards" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
+                <div class="row grid" v-if="showMore">
+                    <div v-for="card in cards.slice(0, 9)" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
                         <a :href="card.websiteurl" target="_blank" rel="noopener"> 
+                            <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
+                                <div class="card__caption">
+                                    <div class="card__caption_text">
+                                        <h2 v-cloak>{{card.title}}</h2>
+                                        <h4 v-cloak>{{card.subtitles}}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row grid" v-else>
+                    <div v-for="card in cards" class="card-grid col-xs-6 col-md-4 grid-item no-gutter">
+                        <a :href="card.websiteurl" target="_blank"> 
                             <div class="card" :style="{ 'background-image': 'url(' + card.cardImg + ')' }">
                                 <div class="card__caption">
                                     <div class="card__caption_text">

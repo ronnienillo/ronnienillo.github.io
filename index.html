@@ -48,7 +48,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="hero-caption">
                     <div class="hero-caption__text">
                         <h1 class="text-uppercase" v-cloak>{{name}}</h1>
-                        <h2 class="h4 text-uppercase" v-cloak>{{position}}</h2>
+                        <p class="h4 text-uppercase" v-cloak>{{position}}</p>
                         <ul class="nav">
                             <li class="nav__list" v-for="navMenu in navMenus"><a :href="navMenu.linkTo" data-toggle="tooltip" v-bind:title="navMenu.title"><i :class="navMenu.font" aria-hidden="true"></i></a></li>
                         </ul>

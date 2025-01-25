@@ -13,9 +13,6 @@
     "introduces": [ "I'm a front-end web developer with more than 9 years of experience. I build responsive, high-performance websites and Progressive Web App.", "My core toolset includes HTML, Sass, Less, Tailwind CSS, Jquery, next.js, Gulp, Git, SVN, WordPress, ACF, and Photoshop.", "I can write solid and well-organized code from scratch, and I have a passion for exploring new and emerging web technologies. I ensure that my projects are optimized, responsive, cross-browser compatible and accessible for users and search engines."],
     "workTile": "My Works",
     "cards": [
-	{"websiteurl":"https://nextjs-free-components.vercel.app/", "cardImg": "images/next-component.png", "title": "React / Next.js Components", "subtitles": "Open Source and Collaboration"},
-	{"websiteurl":"https://next13-movie-five.vercel.app/", "cardImg": "images/next13-movie-five.png", "title": "Next Movies", "subtitles": "Entertainment"},
-	{"websiteurl":"https://dashiki-traditional-apparel.vercel.app/", "cardImg": "images/dashiki.jpg", "title": "Dashiki Traditional Apparel", "subtitles": "E-commers"},
         {"websiteurl":"https://mh.net/", "cardImg": "images/mh.png", "title": "MendHealth", "subtitles": "Sexual Health and Wellness  | Blog"},
         {"websiteurl":"https://purformhealth.com/", "cardImg": "images/pf.jpg", "title": "Purformhealth", "subtitles": "Health and Wellness | Blog"},
         {"websiteurl":"http://www.lano.no/", "cardImg": "images/lano.jpg", "title": "Lano", "subtitles": "Information | Blog"},
@@ -32,7 +29,10 @@
         {"websiteurl":"https://adblockfusion.com/", "cardImg": "images/adb.jpg", "title": "AdblockFusion", "subtitles": "Browser Security | Articles"},
         {"websiteurl":"https://www.squaretakeoff.com/", "cardImg": "images/square-takeoff.png", "title": "Square takeoff", "subtitles": "Constractions site | Blog"},
 	{"websiteurl":"https://www.activateprivacy.com/", "cardImg": "images/activate-privacy.jpg", "title": "Activate Privacy", "subtitles": "Virtual Private Network | Blog"},
-	{"websiteurl":"https://platformmedia.ca/", "cardImg": "images/platform.jpg", "title": "platformmedia", "subtitles": "Platform Media | Digital Agency"}
+	{"websiteurl":"https://platformmedia.ca/", "cardImg": "images/platform.jpg", "title": "platformmedia", "subtitles": "Platform Media | Digital Agency"},
+	{"websiteurl":"https://nextjs-free-components.vercel.app/", "cardImg": "images/next-component.png", "title": "React / Next.js Components", "subtitles": "Open Source and Collaboration"},
+	{"websiteurl":"https://next13-movie-five.vercel.app/", "cardImg": "images/next13-movie-five.png", "title": "Next Movies", "subtitles": "Entertainment"},
+	{"websiteurl":"https://dashiki-traditional-apparel.vercel.app/", "cardImg": "images/dashiki.jpg", "title": "Dashiki Traditional Apparel", "subtitles": "E-commers"}
     ],
     "footerTitle": "Hit me here",
     "footerMenus": [
